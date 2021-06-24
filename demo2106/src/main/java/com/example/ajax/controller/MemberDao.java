@@ -18,6 +18,7 @@ public class MemberDao {
 //		pmap.put("mem_pw", "123");
 		sqlSessionTemplate.selectOne(NAMESPACE+"proc_login",pmap);
 		System.out.println("r_name:"+pmap.get("r_name"));
+		s_name = pmap.get("r_name").toString();
 		return s_name;
 	}
 }
