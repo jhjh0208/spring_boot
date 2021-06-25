@@ -26,7 +26,7 @@
     </Appenders>
 
     <Loggers>
-        <Root level="info">
+        <Root level="all"> <!--트레이스, 인포, 올.  -->
             <AppenderRef ref="Console"/>
             <AppenderRef ref="File" />
         </Root>
