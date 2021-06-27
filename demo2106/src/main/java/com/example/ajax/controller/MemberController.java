@@ -7,7 +7,9 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
@@ -15,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class MemberController {
 	@Autowired
 	private MemberLogic memberLogic = null;
-	@RequestMapping("/login")
+	@RequestMapping(value="/login", method=RequestMethod.POST)
 	public String login(HttpServletRequest req, @RequestParam Map<String,Object> pmap) {
 		HttpSession session = req.getSession();
 		String s_name = null;

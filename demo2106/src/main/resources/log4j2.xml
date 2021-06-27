@@ -2,7 +2,7 @@
 <Configuration status="info" monitorInterval="30">
     <Properties>
         <Property name="LOG_FORMAT">%d{yyyy-MM-dd HH:mm:ss} %p (%13F:%L) %m%n</Property>
-        <Property name="BASE_DIR">/Users/dngud</Property>
+        <Property name="BASE_DIR">/programming/spring_boot</Property>
     </Properties>
 
     <Appenders>
@@ -26,7 +26,7 @@
     </Appenders>
 
     <Loggers>
-        <Root level="all"> <!--트레이스, 인포, 올.  -->
+        <Root level="trace">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="File" />
         </Root>

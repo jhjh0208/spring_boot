@@ -8,6 +8,7 @@ import javax.servlet.http.HttpSession;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -20,6 +21,7 @@ public class RestMemberController {
 	@Autowired
 	private MemberLogic memberLogic = null;
 	@RequestMapping("/jsonLogin")
+	//@RequestParam은 GET방식일때 사용함.
 	public String jsonLogin(HttpServletRequest req, @RequestParam Map<String,Object> pmap) {
 		HttpSession session = req.getSession();
 		String s_name = null;
@@ -27,8 +29,9 @@ public class RestMemberController {
 		session.setAttribute("s_name", s_name);
 		return s_name;
 	}
-	@RequestMapping("/postLogin")
+	@PostMapping("/postLogin")
 	public String postLogin(HttpServletRequest req, @RequestBody Map<String,Object> pmap) {
+		logger.info("postLogin");
 		HttpSession session = req.getSession();
 		String s_name = null;
 		s_name = memberLogic.login(pmap);

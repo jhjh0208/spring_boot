@@ -14,9 +14,27 @@
     }
     function loginAction(){
 		console.log("로그인 처리 하세요");
-    }   
+		$.ajax({
+			url:"loginAccount.jsp",//session.invalidate()-세션값 모두 날림
+			success:function(data){//@data-json,xml,html,text
+				$("#loginForm").html(data);
+			},
+			error:function(e){//@param-XMLHttpRequest
+				
+			}
+		});///////////end of ajax
+    }/////////////////end of loginAction
     function logoutAction(){
 		console.log("로그아웃 처리 하세요");
+		$.ajax({
+			url:"logout.jsp",
+			success:function(data){
+				$("#loginForm").html(data);
+			},
+			error:function(e){
+				
+			}
+		});
     }   
   </script>
 </head>
@@ -54,7 +72,7 @@
         </ul>
       </li>
      </ul>
-     <div id="loginForm" class="nav navbar-nav navbar-right">
+     <div id=" " class="nav navbar-nav navbar-right">
         <form class="navbar-form navbar-right" action="/action_page.php">
           <div class="form-group">
             <input type="text" class="form-control" id="usrname" size="10" placeholder="아이디">
