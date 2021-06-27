@@ -72,7 +72,7 @@
         </ul>
       </li>
      </ul>
-     <div id=" " class="nav navbar-nav navbar-right">
+     <div id="loginForm" class="nav navbar-nav navbar-right">
         <form class="navbar-form navbar-right" action="/action_page.php">
           <div class="form-group">
             <input type="text" class="form-control" id="usrname" size="10" placeholder="아이디">
