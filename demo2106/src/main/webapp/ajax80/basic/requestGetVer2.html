@@ -9,9 +9,9 @@
   <script>
     function startMethod(){
       $.ajax({
-        type: "get",
-        url: "requestGet.xml",
-        dataType: "html",
+        type: 'get',        
+        url: 'requestGet.xml',
+        dataType: 'html',
         success:function(data){
           $("#d_xml").html(data);
         },
@@ -24,7 +24,9 @@
   </script>
 </head>
 <body>
-  <div id="d_xml"></div>
+  <div id="d_xml">
+  
+  </div>
   <button onclick="startMethod()">전송</button>
 </body>
 </html>
