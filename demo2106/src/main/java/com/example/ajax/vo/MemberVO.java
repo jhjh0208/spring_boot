@@ -4,6 +4,7 @@ public class MemberVO {
 	private String mem_id     = null;
 	private String mem_pw     = null;
 	private String mem_email  = null;
+	private String mem_name   = null;
 	public String getMem_id() {
 		return mem_id;
 	}
@@ -21,6 +22,12 @@ public class MemberVO {
 	}
 	public void setMem_email(String mem_email) {
 		this.mem_email = mem_email;
+	}
+	public String getMem_name() {
+		return mem_name;
+	}
+	public void setMem_name(String mem_name) {
+		this.mem_name = mem_name;
 	}
 	public String toString() {
 		return "MemberVO{"+
