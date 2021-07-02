@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
-	String subject = re    
+String subject = request.getParameter("subject");
+if(subject==null) subject = "JAVA";   
 %>
 <!DOCTYPE html>
 <html>
@@ -19,36 +20,41 @@
 	#d_java{
 	width: 100%;
 	height: 700px;
-	backgrounf: #F15F5F;
+	background: #F15F5F;
 	}
 	#d_react{
 	width: 100%;
 	height: 700px;
-	backgrounf: #E5D85C;
+	background: #E5D85C;
 	}
 	#d_android{
 	width: 100%;
 	height: 700px;
-	backgrounf: #86E57F;
+	background: #86E57F;
 	}
 	#d_nodejs{
 	width: 100%;
 	height: 700px;
-	backgrounf: #5CD1E5;
+	background: #5CD1E5;
 	}
 	#d_spring{
 	width: 100%;
 	height: 700px;
-	backgrounf: #A566FF;
+	background: #A566FF;
 	}
 	#main_header{
 		height: 60px;
 		line-height: 60px;
 		padding-left: 10px;
-		boader-bottom: 1px solid black;
+		border-bottom: 1px solid black;
 		background: #1D4088;
 		color: white;
 	}
+	
+	#main_gnb {
+		overflow: hidden;
+		background: #008299;
+		}
 	#main_gnb > ul.left{
 		overflow: hidden;
 		float: left;
@@ -57,8 +63,8 @@
 		overflow: hidden;
 		float: right;
 	}
-	main_gnb >ul.left >li {width: 90px; float: left}
-	main_gnb >ul.right >li {width: 110px; float: right}
+	#main_gnb >ul.left >li {width: 90px; float: left}
+	#main_gnb >ul.right >li {width: 110px; float: right}
 	
 	#main_gnb a{
 		display: block;

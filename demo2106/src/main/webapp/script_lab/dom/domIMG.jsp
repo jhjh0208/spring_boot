@@ -1,33 +1,30 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!--
-ÀÏ´Ü ÇãÁ²Àº ÀÌ°Å 3°³ °°Àº°Å¶ó°í »ı°¢ÇØ¶ó
+ì¼ë‹¨ í—ˆì¡‰ì€ ì´ê±° 3ê°œ ê°™ì€ê±°ë¼ê³  ìƒê°í•´ë¼
 Tag
 Element
 Node 
-ÅØ½ºÆ® ³ëµå´Â ÅÂ±×ÀÌ¸§Àº ¾ø°í ÅÂ±×°ªÀº ÀÖ´Ù.
-NodeNameÀº ³ÎÀÌ°í NodeValue ÀÖ´Ù.
-window´Â dom tree °®À½
+í…ìŠ¤íŠ¸ ë…¸ë“œëŠ” íƒœê·¸ì´ë¦„ì€ ì—†ê³  íƒœê·¸ê°’ì€ ìˆë‹¤.
+NodeNameì€ ë„ì´ê³  NodeValue ìˆë‹¤.
+windowëŠ” dom tree ê°–ìŒ
   -->
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>DOM ELEMENT ADD</title>
+<meta charset="UTF-8">
+<title>Insert title here</title>
 </head>
 <body>
 <script type="text/javascript">
 	window.onload = function(){
-		//º¯¼ö ¼±¾ğ °¡´É.
-		let header = document.createElement("img");//block - ÀÚÃ¼ Å©±â¸¦ °®°í ÀÖ´Ù.
-		let textNode = document.createTextNode("Hello DOM!!")
-		//³ëµå¸¦ ¿¬°á(React.js)
-		//Á¦°øµÇ´Â ³ëµå
-		//»ç¿ëÀÚ Á¤ÀÇ ³ëµå (DataSet ¸ÓÁö ÇÒ ¼ö ÀÖÀ½: ¶óÀÌÇÁ»çÀÌÅ¬- ÀÎÅÍ¼ÁÆ®- °¡»óµ¼¿¡ Ãß°¡µÈ µ¼À» ¿¬°á)
-		header.appendChild(textNode);
-		document.body.appendChild(header);
+		//ë³€ìˆ˜ ì„ ì–¸
+		let img = document.createElement("img");//block  <img src="spinning3.png">
+		img.setAttribute("src","pic4.png");
+		img.setAttribute("width",300);
+		img.setAttribute("height",350);
+		document.body.appendChild(img);
 	}
 </script>
-
 </body>
 </html>

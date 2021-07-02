@@ -11,7 +11,7 @@
 	window.onload = function(){
 		let header = document.getElementById('header');
 		//이벤트를 연결합니다.
-		header.inclick = function(){
+		header.onclick = function(){
 			alert('클릭');
 			//이벤트를 제거합니다.
 			header.onclick=null;

@@ -1,13 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!--
-ÀÏ´Ü ÇãÁ²Àº ÀÌ°Å 3°³ °°Àº°Å¶ó°í »ı°¢ÇØ¶ó
+ì¼ë‹¨ í—ˆì¡‰ì€ ì´ê±° 3ê°œ ê°™ì€ê±°ë¼ê³  ìƒê°í•´ë¼
 Tag
 Element
 Node 
-ÅØ½ºÆ® ³ëµå´Â ÅÂ±×ÀÌ¸§Àº ¾ø°í ÅÂ±×°ªÀº ÀÖ´Ù.
-NodeNameÀº ³ÎÀÌ°í NodeValue ÀÖ´Ù.
-window´Â dom tree °®À½
+í…ìŠ¤íŠ¸ ë…¸ë“œëŠ” íƒœê·¸ì´ë¦„ì€ ì—†ê³  íƒœê·¸ê°’ì€ ìˆë‹¤.
+NodeNameì€ ë„ì´ê³  NodeValue ìˆë‹¤.
+windowëŠ” dom tree ê°–ìŒ
   -->
 <!DOCTYPE html>
 <html>
@@ -18,12 +18,12 @@ window´Â dom tree °®À½
 <body>
 <script type="text/javascript">
 	window.onload = function(){
-		//º¯¼ö ¼±¾ğ °¡´É.
-		let header = document.createElement("h1");//block - ÀÚÃ¼ Å©±â¸¦ °®°í ÀÖ´Ù.
+		//ë³€ìˆ˜ ì„ ì–¸ ê°€ëŠ¥.
+		let header = document.createElement("h1");//block - ìì²´ í¬ê¸°ë¥¼ ê°–ê³  ìˆë‹¤.
 		let textNode = document.createTextNode("Hello DOM!!")
-		//³ëµå¸¦ ¿¬°á(React.js)
-		//Á¦°øµÇ´Â ³ëµå
-		//»ç¿ëÀÚ Á¤ÀÇ ³ëµå (DataSet ¸ÓÁö ÇÒ ¼ö ÀÖÀ½: ¶óÀÌÇÁ»çÀÌÅ¬- ÀÎÅÍ¼ÁÆ®- °¡»óµ¼¿¡ Ãß°¡µÈ µ¼À» ¿¬°á)
+		//ë…¸ë“œë¥¼ ì—°ê²°(React.js)
+		//ì œê³µë˜ëŠ” ë…¸ë“œ
+		//ì‚¬ìš©ì ì •ì˜ ë…¸ë“œ (DataSet ë¨¸ì§€ í•  ìˆ˜ ìˆìŒ: ë¼ì´í”„ì‚¬ì´í´- ì¸í„°ì…‰íŠ¸- ê°€ìƒë”ì— ì¶”ê°€ëœ ë”ì„ ì—°ê²°)
 		header.appendChild(textNode);
 		document.body.appendChild(header);
 	}

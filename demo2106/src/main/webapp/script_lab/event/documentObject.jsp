@@ -14,10 +14,10 @@
 	<script type="text/javascript">
 	window.onload = function(){
 		//문서객체를 가져온다.
-		let buttonA = document.getElememtById("button-a");
-		let buttonB = document.getElememtById("button-b");
-		let counterA = document.getElememtById("counter-a");
-		let counterA = document.getElememtById("counter-b");
+		let buttonA = document.getElementById("button-a");
+		let buttonB = document.getElementById("button-b");
+		let counterA = document.getElementById("counter-a");
+		let counterB = document.getElementById("counter-b");
 		//이벤트를 연결합니다.
 		buttonA.onclick = function(){
 			counterA.innerHTML = Number(counterA.innerHTML) + 1;
