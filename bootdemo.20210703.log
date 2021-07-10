@@ -1,0 +1,4 @@
+2021-07-03 02:48:44 WARN (HikariPool.java:787) HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h15m16s520ms252µs700ns).
+2021-07-03 02:57:32 INFO (SpringApplicationAdminMXBeanRegistrar.java:159) Application shutdown requested.
+2021-07-03 02:57:32 INFO (HikariDataSource.java:350) HikariPool-1 - Shutdown initiated...
+2021-07-03 02:57:32 INFO (HikariDataSource.java:352) HikariPool-1 - Shutdown completed.

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>each test</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            var array = [
+                {name: "Hanbit Media", link: "http://hanbit.co.kr"}
+                {name: "Naver", link: "http://naver.com"}
+                {name: "Daum", link: "http://daum.net"}
+            ];
+            //$each()
+            $.each(array, function(index, item){
+                var output = '';
+                output+='<a href="'+item.link+'">';
+                output+='<h1>'+item.name+"</h1>";
+                output+='</a>'
+                document.body.innerHTML += output;
+            });
+        });
+
+    </script>
+</body>
+</html>

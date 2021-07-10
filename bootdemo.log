@@ -1,109 +1,25 @@
-2021-07-02 11:14:52 INFO (StartupInfoLogger.java:55) Starting Demo210Application using Java 1.8.0_291 on DESKTOP-IJP1TGO with PID 14736 (D:\programming\spring_boot\demo2106\bin\main started by JAEHOON in D:\programming\spring_boot\demo2106)
-2021-07-02 11:14:52 INFO (SpringApplication.java:664) No active profile set, falling back to default profiles: default
-2021-07-02 11:14:53 INFO (DeferredLog.java:255) Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-07-02 11:14:53 INFO (DeferredLog.java:255) For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-07-02 11:14:53 WARN (  Logger.java:44) No MyBatis mapper was found in '[com.example.ajax]' package. Please check your configuration.
-2021-07-02 11:14:54 INFO (TomcatWebServer.java:108) Tomcat initialized with port(s): 7000 (http)
-2021-07-02 11:14:54 INFO (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-7000"]
-2021-07-02 11:14:54 INFO (DirectJDKLog.java:173) Starting service [Tomcat]
-2021-07-02 11:14:54 INFO (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-07-02 11:14:54 INFO (DirectJDKLog.java:173) At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2021-07-02 11:14:54 INFO (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
-2021-07-02 11:14:54 INFO (ServletWebServerApplicationContext.java:289) Root WebApplicationContext: initialization completed in 1335 ms
-2021-07-02 11:14:54 INFO (HikariDataSource.java:80) HikariPool-1 - Starting...
-2021-07-02 11:14:54 WARN (DriverDataSource.java:70) Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2021-07-02 11:14:54 INFO (PoolBase.java:535) HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2021-07-02 11:14:54 INFO (HikariDataSource.java:82) HikariPool-1 - Start completed.
-2021-07-02 11:14:54 INFO (DatabaseConfiguration.java:34) datasource : HikariDataSource (HikariPool-1)
-2021-07-02 11:14:55 INFO (WelcomePageHandlerMapping.java:53) Adding welcome page: ServletContext resource [/index.html]
-2021-07-02 11:14:55 INFO (OptionalLiveReloadServer.java:58) LiveReload server is running on port 35729
-2021-07-02 11:14:55 INFO (DirectJDKLog.java:173) Starting ProtocolHandler ["http-nio-7000"]
-2021-07-02 11:14:55 INFO (TomcatWebServer.java:220) Tomcat started on port(s): 7000 (http) with context path ''
-2021-07-02 11:14:55 INFO (StartupInfoLogger.java:61) Started Demo210Application in 2.826 seconds (JVM running for 3.878)
-2021-07-02 11:47:50 INFO (DirectJDKLog.java:173) Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-07-02 11:47:50 INFO (FrameworkServlet.java:525) Initializing Servlet 'dispatcherServlet'
-2021-07-02 11:47:50 INFO (FrameworkServlet.java:547) Completed initialization in 1 ms
-2021-07-02 12:07:39 ERROR (DirectJDKLog.java:175) Servlet.service() for servlet [jsp] in context with path [] threw exception [/script_lab/dom/domOut.jsp (line: [73], column: [2]) JSP file [java.jsp] not found] with root cause
-org.apache.jasper.JasperException: /script_lab/dom/domOut.jsp (line: [73], column: [2]) JSP file [java.jsp] not found
-	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41) ~[tomcat-embed-jasper-9.0.48.jar:9.0.48]
-	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:292) ~[tomcat-embed-jasper-9.0.48.jar:9.0.48]
-	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:98) ~[tomcat-embed-jasper-9.0.48.jar:9.0.48]
-	at org.apache.jasper.compiler.Parser.processIncludeDirective(Parser.java:349) ~[tomcat-embed-jasper-9.0.48.jar:9.0.48]
-	at org.apache.jasper.compiler.Parser.parseIncludeDirective(Parser.java:384) ~[tomcat-embed-jasper-9.0.48.jar:9.0.48]
-	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:485) ~[tomcat-embed-jasper-9.0.48.jar:9.0.48]
-	at org.apache.jasper.compiler.Parser.parseFileDirectives(Parser.java:1802) ~[tomcat-embed-jasper-9.0.48.jar:9.0.48]
-	at org.apache.jasper.compiler.Parser.parse(Parser.java:141) ~[tomcat-embed-jasper-9.0.48.jar:9.0.48]
-	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244) ~[tomcat-embed-jasper-9.0.48.jar:9.0.48]
-	at org.apache.jasper.compiler.ParserController.parseDirectives(ParserController.java:127) ~[tomcat-embed-jasper-9.0.48.jar:9.0.48]
-	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:202) ~[tomcat-embed-jasper-9.0.48.jar:9.0.48]
-	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:391) ~[tomcat-embed-jasper-9.0.48.jar:9.0.48]
-	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367) ~[tomcat-embed-jasper-9.0.48.jar:9.0.48]
-	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351) ~[tomcat-embed-jasper-9.0.48.jar:9.0.48]
-	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605) ~[tomcat-embed-jasper-9.0.48.jar:9.0.48]
-	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399) ~[tomcat-embed-jasper-9.0.48.jar:9.0.48]
-	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379) ~[tomcat-embed-jasper-9.0.48.jar:9.0.48]
-	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327) ~[tomcat-embed-jasper-9.0.48.jar:9.0.48]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.48.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.48.jar:9.0.48]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.8.jar:5.3.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.8.jar:5.3.8]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.8.jar:5.3.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.8.jar:5.3.8]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.8.jar:5.3.8]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.8.jar:5.3.8]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.48.jar:9.0.48]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.48.jar:9.0.48]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_291]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_291]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.48.jar:9.0.48]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_291]
-2021-07-02 14:34:49 WARN (HikariPool.java:787) HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m51s797ms39µs300ns).
-2021-07-02 23:35:15 WARN (HikariPool.java:787) HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h11m21s121ms434µs300ns).
-2021-07-02 23:41:16 INFO (SpringApplicationAdminMXBeanRegistrar.java:159) Application shutdown requested.
-2021-07-02 23:41:16 INFO (HikariDataSource.java:350) HikariPool-1 - Shutdown initiated...
-2021-07-02 23:41:16 INFO (HikariDataSource.java:352) HikariPool-1 - Shutdown completed.
-2021-07-02 23:41:23 INFO (StartupInfoLogger.java:55) Starting Demo210Application using Java 1.8.0_291 on DESKTOP-IJP1TGO with PID 14708 (D:\programming\spring_boot\demo2106\bin\main started by JAEHOON in D:\programming\spring_boot\demo2106)
-2021-07-02 23:41:23 INFO (SpringApplication.java:664) No active profile set, falling back to default profiles: default
-2021-07-02 23:41:23 INFO (DeferredLog.java:255) Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-07-02 23:41:23 INFO (DeferredLog.java:255) For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-07-02 23:41:24 WARN (  Logger.java:44) No MyBatis mapper was found in '[com.example.ajax]' package. Please check your configuration.
-2021-07-02 23:41:25 INFO (TomcatWebServer.java:108) Tomcat initialized with port(s): 7000 (http)
-2021-07-02 23:41:25 INFO (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-7000"]
-2021-07-02 23:41:25 INFO (DirectJDKLog.java:173) Starting service [Tomcat]
-2021-07-02 23:41:25 INFO (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-07-02 23:41:25 INFO (DirectJDKLog.java:173) At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2021-07-02 23:41:25 INFO (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
-2021-07-02 23:41:25 INFO (ServletWebServerApplicationContext.java:289) Root WebApplicationContext: initialization completed in 1991 ms
-2021-07-02 23:41:25 INFO (HikariDataSource.java:80) HikariPool-1 - Starting...
-2021-07-02 23:41:25 WARN (DriverDataSource.java:70) Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
-2021-07-02 23:41:25 INFO (PoolBase.java:535) HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
-2021-07-02 23:41:25 INFO (HikariDataSource.java:82) HikariPool-1 - Start completed.
-2021-07-02 23:41:25 INFO (DatabaseConfiguration.java:34) datasource : HikariDataSource (HikariPool-1)
-2021-07-02 23:41:26 INFO (WelcomePageHandlerMapping.java:53) Adding welcome page: ServletContext resource [/index.html]
-2021-07-02 23:41:26 INFO (OptionalLiveReloadServer.java:58) LiveReload server is running on port 35729
-2021-07-02 23:41:26 INFO (DirectJDKLog.java:173) Starting ProtocolHandler ["http-nio-7000"]
-2021-07-02 23:41:26 INFO (TomcatWebServer.java:220) Tomcat started on port(s): 7000 (http) with context path ''
-2021-07-02 23:41:26 INFO (StartupInfoLogger.java:61) Started Demo210Application in 3.892 seconds (JVM running for 5.15)
-2021-07-02 23:41:51 INFO (DirectJDKLog.java:173) Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-07-02 23:41:51 INFO (FrameworkServlet.java:525) Initializing Servlet 'dispatcherServlet'
-2021-07-02 23:41:51 INFO (FrameworkServlet.java:547) Completed initialization in 3 ms
+2021-07-08 16:17:08 INFO (StartupInfoLogger.java:55) Starting Demo210Application using Java 1.8.0_291 on DESKTOP-IJP1TGO with PID 11812 (D:\programming\spring_boot\demo2106\bin\main started by JAEHOON in D:\programming\spring_boot\demo2106)
+2021-07-08 16:17:08 INFO (SpringApplication.java:664) No active profile set, falling back to default profiles: default
+2021-07-08 16:17:08 INFO (DeferredLog.java:255) Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-08 16:17:08 INFO (DeferredLog.java:255) For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-08 16:17:09 WARN (  Logger.java:44) No MyBatis mapper was found in '[com.example.ajax]' package. Please check your configuration.
+2021-07-08 16:17:10 INFO (TomcatWebServer.java:108) Tomcat initialized with port(s): 7000 (http)
+2021-07-08 16:17:10 INFO (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-7000"]
+2021-07-08 16:17:10 INFO (DirectJDKLog.java:173) Starting service [Tomcat]
+2021-07-08 16:17:10 INFO (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-08 16:17:10 INFO (DirectJDKLog.java:173) At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-07-08 16:17:10 INFO (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+2021-07-08 16:17:10 INFO (ServletWebServerApplicationContext.java:289) Root WebApplicationContext: initialization completed in 2035 ms
+2021-07-08 16:17:10 INFO (HikariDataSource.java:80) HikariPool-1 - Starting...
+2021-07-08 16:17:10 WARN (DriverDataSource.java:70) Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2021-07-08 16:17:10 INFO (PoolBase.java:535) HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2021-07-08 16:17:10 INFO (HikariDataSource.java:82) HikariPool-1 - Start completed.
+2021-07-08 16:17:10 INFO (DatabaseConfiguration.java:34) datasource : HikariDataSource (HikariPool-1)
+2021-07-08 16:17:11 INFO (WelcomePageHandlerMapping.java:53) Adding welcome page: ServletContext resource [/index.html]
+2021-07-08 16:17:11 INFO (OptionalLiveReloadServer.java:58) LiveReload server is running on port 35729
+2021-07-08 16:17:11 INFO (DirectJDKLog.java:173) Starting ProtocolHandler ["http-nio-7000"]
+2021-07-08 16:17:11 INFO (TomcatWebServer.java:220) Tomcat started on port(s): 7000 (http) with context path ''
+2021-07-08 16:17:11 INFO (StartupInfoLogger.java:61) Started Demo210Application in 4.231 seconds (JVM running for 5.905)
+2021-07-08 16:33:08 INFO (SpringApplicationAdminMXBeanRegistrar.java:159) Application shutdown requested.
+2021-07-08 16:33:08 INFO (HikariDataSource.java:350) HikariPool-1 - Shutdown initiated...
+2021-07-08 16:33:08 INFO (HikariDataSource.java:352) HikariPool-1 - Shutdown completed.
